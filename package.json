@@ -1,0 +1,19 @@
+{
+  "name": "iso-date-formatter",
+  "version": "1.0.0",
+  "description": "Simple mini ISO date formatter",
+  "main": "index.js",
+  "author": "https://github.com/boombang",
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/rollup -c"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "rollup": "^1.16.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.0.4",
+    "rollup-plugin-uglify": "^6.0.2"
+  }
+}

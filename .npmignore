@@ -1,0 +1,7 @@
+node_modules
+/src
+/rollup.config.js
+/index.js
+.vscode
+node_modules
+.DS_Store
