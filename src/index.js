@@ -44,7 +44,7 @@ const ISODateFormatter = (input, options) => {
     return prematureTermination(`Invalid ISO date input = ${input}`);
   }
 
-  const format = options && options.format || defaultFormat;
+  let format = options && options.format || defaultFormat;
   if(isEmptyOrNotString(format)) {
     return prematureTermination(`Invalid format = ${format}`);
   }
@@ -52,7 +52,8 @@ const ISODateFormatter = (input, options) => {
   let output = format;
 
   for(let token in tokens) {
-    if(output.search(token) > -1) {
+    if(format.search(token) > -1) {
+      format = format.replace(token,'')
       output = output.replace(token, tokens[token](matchResult, options));
     }
   }

@@ -49,6 +49,10 @@ test('format: dd-MMM-yyyy', () => {
   expect(ISODateFormatter(date, { format: 'dd-MMM-yyyy', namedMonths })).toBe('04-Jun-2019');
 });
 
+test('format: dd-MMM-yyyy, March', () => {
+  expect(ISODateFormatter('2019-03-04T14:03:07.007Z', { format: 'dd-MMM-yyyy', namedMonths })).toBe('04-Mär-2019');
+});
+
 test('format: d-M-yy', () => {
   expect(ISODateFormatter(date, { format: 'd-M-yy'})).toBe('4-6-19');
 });
