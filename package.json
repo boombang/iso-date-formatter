@@ -1,6 +1,6 @@
 {
   "name": "iso-date-formatter",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Simple mini ISO date formatter",
   "main": "dist/index.js",
   "author": "https://github.com/boombang",
